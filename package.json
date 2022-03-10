@@ -1,0 +1,56 @@
+{
+  "name": "grapes",
+  "version": "1.0.0",
+  "description": "Grapes ERC-20 Token and Airdrop",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "erc20:deploy:development": "truffle migrate --network development --reset --compile-all -f 2 --to 2",
+    "erc20:deploy:rinkeby": "truffle migrate --network rinkeby --reset --compile-all -f 2 --to 2",
+    "erc20:deploy:mainnet": "truffle migrate --network mainnet --reset --compile-all -f 2 --to 2",
+    "airdrop:deploy:development": "truffle migrate --network development --reset --compile-all -f 3 --to 3",
+    "airdrop:deploy:rinkeby": "truffle migrate --network rinkeby --reset --compile-all -f 3 --to 3",
+    "airdrop:deploy:mainnet": "truffle migrate --network mainnet --reset --compile-all -f 3 --to 3",
+    "airdrop:script:development": "truffle migrate --network development --reset --compile-all -f 4 --to 4",
+    "airdrop:script:rinkeby": "truffle migrate --network rinkeby --reset --compile-all -f 4 --to 4",
+    "airdrop:script:mainnet": "truffle migrate --network mainnet --reset --compile-all -f 4 --to 4",
+    "test": "npx hardhat test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HorizenLabs/grapes-erc20.git"
+  },
+  "author": "Lou Caponi <louis@horizenlabs.io>",
+  "contributors": [
+    "Rodrigo Doria Medina <rodrigo@horizenlabs.io>",
+    "Andrea Nistico <andrea@horizenlabs.io>",
+    "Rostyslav Bortman <rostyslav@horizenlabs.io>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HorizenLabs/grapes-erc20/issues"
+  },
+  "homepage": "https://github.com/HorizenLabs/grapes-erc20",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.3",
+    "@truffle/hdwallet-provider": "^1.6.0",
+    "chai": "^4.3.4",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^9.1.3"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-etherscan": "^2.1.8",
+    "@nomiclabs/hardhat-truffle5": "^2.0.2",
+    "@nomiclabs/hardhat-web3": "^2.0.0",
+    "bn-chai": "^1.0.1",
+    "dotenv": "^10.0.0",
+    "hardhat": "^2.7.0",
+    "solidity-coverage": "^0.7.17",
+    "truffle-plugin-verify": "^0.5.18",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
+  }
+}
