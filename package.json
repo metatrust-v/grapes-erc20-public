@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/HorizenLabs/grapes-erc20",
   "dependencies": {
-    "@openzeppelin/contracts": "^4.3.3",
+    "@openzeppelin/contracts": "^4.8.3",
     "@truffle/hdwallet-provider": "^1.6.0",
     "chai": "^4.3.4",
     "chai-as-promised": "^7.1.1",
